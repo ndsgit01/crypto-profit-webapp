@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Main Page
+        </title>
+        <link rel="stylesheet" href="{{url_for('static', path='/style.css')}}"/>
+    </head>
+    <body>
+        <h3>Let's compare performances of cryptocurrencies over the last 31 days!</h3>
+        <form action="/show_plot" method="post" enctype="multipart/form-data">
+            Enter cryptocurrency tickers (as comma separated values):
+            <input type="text" name="tickers" size="50">
+            <br>
+            <button type="submit">Plot</button>
+        </form>
+    </body>
+</html>
