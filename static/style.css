@@ -1,0 +1,11 @@
+h3 {
+    color: purple;
+}
+
+th, td, img{
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background: lightblue;
+}
